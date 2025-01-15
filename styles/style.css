@@ -41,7 +41,9 @@ ol {
 }
 
 .page {
-  inline-size: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   block-size: 100%;
   margin: auto;
   color: #fff;
@@ -52,19 +54,14 @@ ol {
 
 .content {
   display: grid;
-  justify-content: center;
   grid-template-areas: "content content";
-  /* grid-template-rows: 2fr 1fr; */
-  /* grid-template-columns: 711px 399px; */
   gap: 30px;
   align-items: end;
-  padding: 133px 30px;
 }
 
 
 .result__video-container {
   position: relative;
-  /* верно ли позиционирование */
   margin-bottom: 16px;
   width: 711px;
   height: 386px;
@@ -115,11 +112,6 @@ ol {
 fieldset {
   border: none;
 }
-
-/* .search-form__label {
-  display: flex;
-  width: fit-content;
-} */
 
 /* текстовое поле ввода */
 
@@ -224,16 +216,17 @@ button:focus-visible {
   flex-direction: column;
   height: 100%;
   width: 100%;
+  min-inline-size: 399px;
 }
 
-.content__list {
+
+.content__list-container {
   position: relative;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 298px;
 }
 
 .content__list-item {
-  /* display: block; */
   margin-bottom: 30px;
   padding-left: 3px;
   padding-right: 3px;
@@ -262,7 +255,6 @@ button:focus-visible {
   flex-grow: 1;
   height: 103px;
   width: 196px; 
-  /* ошибка ли задать ширину */
 }
 
 .title {
@@ -300,16 +292,13 @@ button:focus-visible {
   font-size: 18px;
   font-weight: 400;
   line-height: 16.2px;
-  /* ВЕРНО ЛИ ЗАДАН ЛАЙН КЛЭМП */
-  /* overflow: hidden;
-  display: -webkit-box; */
   line-clamp: 1;
-  /* -webkit-box-orient: vertical;  */
 }
 
 /* состояния карточек */
-/* почем-то не работает */
+
 .content__card-link_current {
+  display: block;
   background-color: #545050;
 }
 
