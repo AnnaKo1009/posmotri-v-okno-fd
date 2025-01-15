@@ -141,7 +141,7 @@ fieldset {
 
 /* чекбокс */
 
-.search-form__pseudo-checkbox  {
+.search-form__pseudo-checkbox {
   display: inline-block;
   border: 1px solid #FFFFFF;
   vertical-align: middle;
@@ -183,7 +183,7 @@ fieldset {
   cursor: pointer;
 }
 
-.search-form__submit-button{
+.search-form__submit-button {
   width: 194px;
   align-self: end;
 }
@@ -254,7 +254,7 @@ button:focus-visible {
 .content__video-card-description-container {
   flex-grow: 1;
   height: 103px;
-  width: 196px; 
+  width: 196px;
 }
 
 .title {
